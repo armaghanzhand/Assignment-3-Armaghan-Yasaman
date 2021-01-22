@@ -1,1 +1,5 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Lowpoly Nature & Village Pack/Demo Scene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
