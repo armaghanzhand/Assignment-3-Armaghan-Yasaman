@@ -10,6 +10,7 @@ TagManager:
   - Dragon2
   - Home
   - Eye
+  - Dragon
   layers:
   - Default
   - TransparentFX
