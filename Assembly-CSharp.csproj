@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Models\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\Scripts\Accellerator.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\OSC.cs" />
      <Compile Include="Assets\Template\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Template\TutorialInfo\Scripts\Readme.cs" />
