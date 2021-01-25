@@ -9,6 +9,7 @@ TagManager:
   - Sheild
   - Dragon2
   - Home
+  - Eye
   layers:
   - Default
   - TransparentFX

@@ -23,6 +23,8 @@ public class Accellerator : MonoBehaviour
     public TextMeshProUGUI Lives;
     public GameObject State1;
     public GameObject State2;
+    public GameObject InsideCamera;
+    public GameObject OutsideCamera;
     //public GameObject State2_5;
     public GameObject State3;
 
@@ -36,6 +38,8 @@ public class Accellerator : MonoBehaviour
         IsPaused = false;
         State = 0;
         IsSheilded = false;
+        InsideCamera.SetActive(true);
+        OutsideCamera.SetActive(false);
     }
 
     void update()
@@ -157,6 +161,12 @@ public class Accellerator : MonoBehaviour
             IsPaused = true;
             Hints.text = "I'm so proud of you!\nI have nothing else to teach you.\nYou are now ready to play the real game.\nGood Luck!";
             State = 4;
+        }
+        if (other.gameObject.CompareTag("Eye"))
+        {
+            other.gameObject.SetActive(false);
+            OutsideCamera.SetActive(true);
+            InsideCamera.SetActive(false);
         }
     }
 }
