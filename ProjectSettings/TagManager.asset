@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Dragon1
+  - Heart
+  - Sheild
+  - Dragon2
+  - Home
+  - Eye
+  - Dragon
   layers:
   - Default
   - TransparentFX
