@@ -5,27 +5,27 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637472237360000000
-    m_Hash: 3451580683
+      ticks: 637472243510000000
+    m_Hash: 2184125879
   m_LockFileStatus:
     m_FilePath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637472239530000000
-    m_Hash: 2548629788
+      ticks: 637472244280000000
+    m_Hash: 1466543385
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
-    - packageId: com.unity.collab-proxy@1.2.16
+    - packageId: com.unity.collab-proxy@1.3.9
       testable: 0
       isDirectDependency: 1
-      version: 1.2.16
+      version: 1.3.9
       source: 1
-      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.collab-proxy@1.2.16
+      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -33,10 +33,11 @@ m_PackageAssets:
         name: 
         email: 
         url: 
-      category: 
+      category: Editor
       type: 
-      description: Collaborate is a simple way for teams to save, share, and sync
-        their Unity project
+      description: Collaborate with your teammates with the official version control
+        system for Unity. Collaborate is a simple way for teams to save, share, and
+        sync your Unity project.
       status: 4
       errors: []
       versions:
@@ -84,7 +85,11 @@ m_PackageAssets:
       dependencies: []
       resolvedDependencies: []
       keywords:
+      - vsc
+      - version
+      - control
       - collab
+      - collaboration
       - collaborate
       - teams
       - team
@@ -102,32 +107,32 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 636898892010000000
+      datePublishedTicks: 637314349270000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: https://gitlab.cds.internal.unity3d.com/upm-packages/cloud-services/collab-proxy.git
-        revision: 070e173b6a36e1d6097b1d95e09c08840c23f6ca
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
+        revision: fa825106f349f996acff22f718845eab46ca2d7c
         path: 
-    - packageId: com.unity.ide.rider@1.1.4
+    - packageId: com.unity.ide.rider@1.2.1
       testable: 0
       isDirectDependency: 1
-      version: 1.1.4
+      version: 1.2.1
       source: 1
-      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.ide.rider@1.1.4
+      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.ide.rider@1.2.1
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
-      displayName: Rider Editor
+      displayName: JetBrains Rider Editor
       author:
         name: 
         email: 
         url: 
       category: 
       type: 
-      description: Code editor integration for supporting Rider as code editor for
-        unity. Adds support for generating csproj files for code completion, auto
-        discovery of installations, etc.
+      description: Code editor integration for supporting JetBrains Rider as code
+        editor for unity. Adds support for generating csproj files for code completion,
+        auto discovery of installations, etc.
       status: 4
       errors: []
       versions:
@@ -201,13 +206,62 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637100389670000000
+      datePublishedTicks: 637123753810000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: git@github.cds.internal.unity3d.com:unity/com.unity.ide.rider.git
-        revision: d2ef95989104a4ce866cdcb7f94cf3c67476fcc9
+        revision: 009bcadf1eb16d9bbf3d00bcf6ccdde2162ce0cb
+        path: 
+    - packageId: com.unity.ide.visualstudio@2.0.3
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.3
+      source: 1
+      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.ide.visualstudio@2.0.3
+      assetPath: Packages/com.unity.ide.visualstudio
+      name: com.unity.ide.visualstudio
+      displayName: Visual Studio Editor
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Code editor integration for supporting Visual Studio as code editor
+        for unity. Adds support for generating csproj files for intellisense purposes,
+        auto discovery of installations, etc.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 2.0.3
+        compatible:
+        - 2.0.3
+        verified: 2.0.3
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
+        revision: 869804bff6e99d0d0e9c1867aebaa070fad875e5
         path: 
     - packageId: com.unity.ide.vscode@1.2.3
       testable: 0
@@ -258,12 +312,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: 547f63839bdc87e0aed2c9e0d84f8f6336a83ea3
         path: 
-    - packageId: com.unity.render-pipelines.universal@7.3.1
+    - packageId: com.unity.render-pipelines.universal@8.2.0
       testable: 0
       isDirectDependency: 1
-      version: 7.3.1
+      version: 8.2.0
       source: 1
-      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.render-pipelines.universal@7.3.1
+      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.render-pipelines.universal@8.2.0
       assetPath: Packages/com.unity.render-pipelines.universal
       name: com.unity.render-pipelines.universal
       displayName: Universal RP
@@ -320,9 +374,9 @@ m_PackageAssets:
         verified: 8.2.0
       dependencies:
       - name: com.unity.render-pipelines.core
-        version: 7.3.1
+        version: 8.2.0
       - name: com.unity.shadergraph
-        version: 7.3.1
+        version: 8.2.0
       resolvedDependencies:
       - name: com.unity.render-pipelines.core
         version: 8.2.0
@@ -355,13 +409,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637203498860000000
+      datePublishedTicks: 637302625500000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: https://github.com/Unity-Technologies/ScriptableRenderPipeline.git
-        revision: 3e04a9da77f7658a9bec4a2a8de3a4a40b169865
+        url: git+https://github.com/Unity-Technologies/Graphics.git
+        revision: 4ad03e7975af24c8e60c974edb24c696e74e39b3
         path: 
     - packageId: com.unity.test-framework@1.1.18
       testable: 0
@@ -424,12 +478,12 @@ m_PackageAssets:
         url: https://github.com/Unity-Technologies/com.unity.test-framework.git
         revision: 14025b364215f4465cbe1beb7a81e486b2687ced
         path: 
-    - packageId: com.unity.textmeshpro@2.1.1
+    - packageId: com.unity.textmeshpro@3.0.1
       testable: 0
       isDirectDependency: 1
-      version: 2.1.1
+      version: 3.0.1
       source: 1
-      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.textmeshpro@2.1.1
+      resolvedPath: /Users/armaghanzhand/Documents/GitHub/Assignment-3-Armaghan-Yasaman/Library/PackageCache/com.unity.textmeshpro@3.0.1
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -563,13 +617,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637314375980000000
+      datePublishedTicks: 637314376320000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
-        revision: 43745ffec1bfe433cd3e02e88eb1f393097dffb9
+        revision: 1604b62e543216408311bcd1355a7a9ca1e65765
         path: 
     - packageId: com.unity.timeline@1.2.17
       testable: 0

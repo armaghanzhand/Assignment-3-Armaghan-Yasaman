@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class Accellerator1 : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class Accellerator1 : MonoBehaviour
     private bool IsPaused;
     private int State;
     private bool IsSheilded;
+    private int IsEnded;
 
     public WheelCollider wFL, wBL, wFR, wBR;
     public Transform tFL, tBL, tFR, tBR;
@@ -22,6 +25,7 @@ public class Accellerator1 : MonoBehaviour
     public TextMeshProUGUI Lives;
     public GameObject InsideCamera;
     public GameObject OutsideCamera;
+    public TextMeshProUGUI notice;
 
 
     // Start is called before the first frame update
@@ -36,6 +40,7 @@ public class Accellerator1 : MonoBehaviour
         IsSheilded = false;
         InsideCamera.SetActive(true);
         OutsideCamera.SetActive(false);
+        IsEnded = 0;
     }
 
     void update()
@@ -51,7 +56,19 @@ public class Accellerator1 : MonoBehaviour
         if (State == 4)
         {
             System.Threading.Thread.Sleep(3000);
-        }
+        
+        
+     }
+     if (IsEnded == 8)
+    {
+            System.Threading.Thread.Sleep(3000);
+            SceneManager.LoadScene(0);
+
+    }
+    if (IsEnded <8)
+    {
+    IsEnded = IsEnded*2;
+    }
     }
 
     void Steer()
@@ -129,7 +146,17 @@ public class Accellerator1 : MonoBehaviour
             other.gameObject.SetActive(false);
             liveCount = liveCount + 1;
             UpdateLives();
-        }        
+        }       
+
+        if (other.gameObject.CompareTag("Home"))
+        {
+            //win notice
+            notice.text = "Hey You Got 1";
+
+           // notice.SetActive (true);
+            IsEnded = 1;
+
+        }  
     }
 
     void UpdateLives()
@@ -137,6 +164,12 @@ public class Accellerator1 : MonoBehaviour
         if (liveCount <= 0)
         {
             //end
+            notice.text = "Game Over";
+           // notice.SetActive (true);
+            IsEnded = 1;
+
+
+
         }
         else
         {
